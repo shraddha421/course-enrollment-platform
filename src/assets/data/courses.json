@@ -1,0 +1,138 @@
+[
+    {
+      "title": "Angular Basics",
+      "author": "John Doe",
+      "description": "Learn the fundamentals of Angular framework.",
+      "topics": ["Components", "Templates", "Routing", "Services"],
+      "rating": 4.5,
+     "showTopics": false
+    },
+    {
+      "title": "Advanced TypeScript",
+      "author": "Jane Smith",
+      "description": "Deep dive into advanced TypeScript features.",
+      "topics": ["Generics", "Decorators", "Type Inference", "Utility Types"],
+      "rating": 4.8,
+     "showTopics": false
+    },
+    {
+      "title": "RxJS in Angular",
+      "author": "Alex Johnson",
+      "description": "Master reactive programming using RxJS in Angular.",
+      "topics": ["Observables", "Subjects", "Operators", "Schedulers"],
+      "rating": 4.7,
+     "showTopics": false
+    },
+    {
+      "title": "Angular Material UI",
+      "author": "Emily Clark",
+      "description": "Build elegant UIs using Angular Material components.",
+      "topics": ["Form Controls", "Navigation", "Tables", "Dialogs"],
+      "rating": 4.6,
+     "showTopics": false
+    },
+    {
+      "title": "State Management with NgRx",
+      "author": "Michael Brown",
+      "description": "Manage large-scale app state with NgRx effectively.",
+      "topics": ["Store", "Effects", "Selectors", "Reducers"],
+      "rating": 4.9,
+     "showTopics": false
+    },
+     {
+    "title": "Progressive Web Apps (PWA)",
+    "author": "Daniel Wilson",
+    "description": "Convert your Angular app into a PWA.",
+    "topics": ["Service Workers", "App Manifest", "Caching", "Offline Mode"],
+    "rating": 4.3,
+   "showTopics": false
+  },
+  {
+    "title": "Full Stack Angular with Node.js",
+    "author": "Olivia Moore",
+    "description": "Build full-stack apps using Angular for frontend and Node.js for backend.",
+    "topics": ["API Integration", "Authentication", "MongoDB", "JWT"],
+    "rating": 4.7,
+   "showTopics": false
+  },
+  {
+    "title": "Angular Performance Optimization",
+    "author": "Liam Taylor",
+    "description": "Improve performance of Angular applications.",
+    "topics": ["Change Detection", "Lazy Loading", "TrackBy", "OnPush"],
+    "rating": 4.6,
+   "showTopics": false
+  },
+  {
+    "title": "Secure Angular Applications",
+    "author": "Emma Martinez",
+    "description": "Learn how to secure Angular apps.",
+    "topics": ["Authentication", "authorization", "CSRF/XSS Protection", "JWT"],
+    "rating": 4.5,
+   "showTopics": false
+  },
+  {
+  "title": "Responsive Web Design with Flexbox & Grid",
+  "author": "Noah Thompson",
+  "description": "Master CSS Flexbox and Grid for responsive web layouts.",
+  "topics": ["Flexbox", "CSS Grid", "Media Queries", "Mobile-first Design"],
+  "rating": 4.4,
+ "showTopics": false
+},
+{
+  "title": "Git and GitHub for Developers",
+  "author": "Ava Martin",
+  "description": "Learn version control and collaboration with Git and GitHub.",
+  "topics": ["Git Basics", "Branching", "Merging", "Pull Requests"],
+  "rating": 4.7,
+ "showTopics": false
+},
+{
+  "title": "Introduction to Web Accessibility",
+  "author": "William Scott",
+  "description": "Build inclusive web applications following accessibility guidelines.",
+  "topics": ["ARIA Roles", "Keyboard Navigation", "Screen Readers", "WCAG"],
+  "rating": 4.3,
+ "showTopics": false
+},
+{
+  "title": "Docker for Angular Developers",
+  "author": "Isabella Harris",
+  "description": "Containerize Angular applications using Docker.",
+  "topics": ["Dockerfile", "Docker Compose", "Volumes", "Multi-stage Builds"],
+  "rating": 4.5,
+ "showTopics": false
+},
+{
+  "title": "JavaScript ES6+ Essentials",
+  "author": "Lucas Walker",
+  "description": "Enhance your JavaScript skills with modern ES6+ features.",
+  "topics": ["Arrow Functions", "Promises", "Async/Await", "Modules"],
+  "rating": 4.6,
+ "showTopics": false
+},
+{
+  "title": "GraphQL Fundamentals",
+  "author": "Mia Allen",
+  "description": "Learn to build and consume GraphQL APIs efficiently.",
+  "topics": ["Schemas", "Queries", "Mutations", "Apollo Client"],
+  "rating": 4.7,
+ "showTopics": false
+},
+{
+  "title": "Firebase with Angular",
+  "author": "James Young",
+  "description": "Create real-time apps using Firebase and Angular.",
+  "topics": ["Realtime Database", "Authentication", "Firestore", "Hosting"],
+  "rating": 4.8,
+ "showTopics": false
+},
+{
+  "title": "Building Forms in Angular",
+  "author": "Ella King",
+  "description": "Master reactive and template-driven forms in Angular.",
+  "topics": ["FormControl", "FormGroup", "FormBuilder", "Validation"],
+  "rating": 4.5,
+ "showTopics": false
+}
+  ]

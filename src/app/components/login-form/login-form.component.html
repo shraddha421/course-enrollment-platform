@@ -1,0 +1,50 @@
+<div class="login-container">
+
+<form #loginForm="ngForm" (ngSubmit)="onLogin(loginForm)" aria-labelledby="loginFormTitle">
+  <h2 id="loginFormTitle">Login</h2>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Email</mat-label>
+    <input
+      matInput
+      type="email"
+      name="email"
+      [(ngModel)]="user.email"
+      required
+      email
+      #emailRef="ngModel"
+      aria-label="Email"
+    />
+    <mat-error *ngIf="emailRef.invalid && emailRef.touched">
+      <span *ngIf="emailRef.errors?.required">Email is required</span>
+      <span *ngIf="emailRef.errors?.email">Invalid email format</span>
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Password</mat-label>
+    <input
+      matInput
+      type="password"
+      name="password"
+      [(ngModel)]="user.password"
+      required
+      minlength="6"
+      #passwordRef="ngModel"
+      aria-label="Password"
+    />
+    <mat-error *ngIf="passwordRef.invalid && passwordRef.touched">
+      <span *ngIf="passwordRef.errors?.required">Password is required</span>
+      <span *ngIf="passwordRef.errors?.minlength">Password must be at least 6 characters</span>
+    </mat-error>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">
+    Login
+  </button>
+  <div class="register-link">
+      New user?
+      <a routerLink="/register">Register here</a>
+    </div>
+</form>
+</div>

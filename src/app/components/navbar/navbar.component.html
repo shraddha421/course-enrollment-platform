@@ -1,0 +1,20 @@
+<mat-toolbar color="primary" class="mat-elevation-z4">
+  <span>Welcome, {{ userName }}</span>
+
+  <span class="spacer"></span>
+
+  <button mat-button [matBadge]="enrolledCount" matBadgeColor="accent" class="enrolled-course-button" (click)="toggleErolledCourses()">
+   {{ viewEnrolled? 'View All Courses' : 'View Enrolled Courses'}}
+  </button>
+
+  <button mat-icon-button [matMenuTriggerFor]="profileMenu" aria-label="Profile menu">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+
+  <mat-menu #profileMenu="matMenu">
+    <button mat-menu-item (click)="logout()">
+      <mat-icon>logout</mat-icon>
+      <span>Logout</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>

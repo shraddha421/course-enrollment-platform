@@ -1,0 +1,76 @@
+<div>
+    <app-navbar [enrolledCount]="enrolledCount" (viewCoursesEvent)="viewCourses($event)"></app-navbar>
+</div>
+
+<div class="filter-container">
+  <mat-form-field appearance="outline" class="filter-input">
+    <mat-label>Search by title or author</mat-label>
+    <input
+      matInput
+      [(ngModel)]="searchTerm"
+      placeholder="Type to filter" (keyup)="filterCourses()"
+      aria-label="Filter courses by title or author"
+    />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="sort-select">
+    <mat-label>Sort by rating</mat-label>
+    <mat-select [(ngModel)]="sortOrder" aria-label="Sort courses by rating" (selectionChange)="sort()">
+      <mat-option value="desc">High to Low</mat-option>
+      <mat-option value="asc">Low to High</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="courses-container">
+  <mat-card
+    *ngFor="let course of filteredCourses"
+    class="course-card"
+    tabindex="0"
+    [attr.aria-label]="'Course card for '+ course.title"
+  >
+    <mat-card-header>
+      <mat-card-title>{{ course.title }}</mat-card-title>
+      <mat-card-subtitle>By {{ course.author }}</mat-card-subtitle>
+    </mat-card-header>
+
+
+    <mat-card-content>
+        <p>Rating: {{course.rating}}</p>
+      <p>{{ course.description }}</p>
+    </mat-card-content>
+
+    <mat-card-actions class="card-actions">
+      <button
+        mat-icon-button
+        (click)="toggleTopics(course)"
+        [attr.aria-expanded]="course.showTopics"
+        [attr.aria-label]="'Toggle topics for ' + course.title"
+      >
+        <mat-icon>{{
+          course.showTopics ? "expand_less" : "expand_more"
+        }}</mat-icon>
+      </button>
+
+      <button
+        mat-raised-button
+        color="primary"
+        (click)="enroll(course)"
+        [attr.aria-label]="'Enroll in '+course.title"
+      >
+        {{course.enrolled? 'Withdraw':'Enroll'}}
+      </button>
+    </mat-card-actions>
+
+    <div
+      class="topics"
+      *ngIf="course.showTopics"
+      role="region"
+      [attr.aria-label]="'Topics to be covered in '+course.title"
+    >
+      <ul>
+        <li *ngFor="let topic of course.topics">{{ topic }}</li>
+      </ul>
+    </div>
+  </mat-card>
+</div>
