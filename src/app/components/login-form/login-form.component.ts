@@ -32,4 +32,7 @@ export class LoginFormComponent implements OnInit {
       }
     }
   }
+  public routeToRegister() {
+    this.router.navigate(['/register']);
+  }
 }
